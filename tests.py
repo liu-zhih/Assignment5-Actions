@@ -32,7 +32,7 @@ class TestCase(unittest.TestCase):
     #     self.assertEqual(expected[1], 'd')
 
     def test_get_days_bet_dates(self):
-        expected = task.get_days_bet_dates(date)
+        expected = task.get_days_bet_dates(date(2020, 2, 20), date(2020, 2, 28))
         self.assertEqual(expected.days, -8)
 
 
