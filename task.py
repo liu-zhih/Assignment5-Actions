@@ -1,4 +1,5 @@
 # import math
+from datetime import date
 
 
 def firstrun():
@@ -14,4 +15,4 @@ def firstrun():
 
 def get_days_bet_dates(date_1, date_2):
     result = date_1 - date_2
-    return result
+    return result.days
