@@ -37,6 +37,8 @@ class TestCase(unittest.TestCase):
         self.assertEqual(abs(expected.days), 8)
         expected = task.get_days_bet_dates(date(2020, 2, 28), date(2020, 2, 1))
         self.assertEqual(abs(expected.days), 27)
+        expected = task.get_days_bet_dates(date(2020, 1, 1), date(2020, 2, 1))
+        self.assertEqual(abs(expected.days), 31)
 
 
 if __name__ == '__main__':
