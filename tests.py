@@ -17,7 +17,7 @@ class TestCase(unittest.TestCase):
         self.assertEqual(expected, task.get_area(0))
         
         expected = 64
-        self.assertEqual(expected, get_area(4.5))
+        self.assertEqual(expected, task.get_area(4.5))
 
 
 if __name__ == '__main__':
