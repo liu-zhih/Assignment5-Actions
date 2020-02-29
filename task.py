@@ -15,4 +15,4 @@ def firstrun():
 
 def get_days_bet_dates(date_1, date_2):
     result = date_1 - date_2
-    return result.days
+    return abs(result.days)
