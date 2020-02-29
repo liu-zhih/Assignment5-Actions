@@ -24,7 +24,7 @@ class TestCase(unittest.TestCase):
         test_list_1 = [1, 2, 3]
         expected = task.get_first_and_last_ele(test_list_1)
         self.assertEqual(expected[0], 1)
-        self.assertEqual(expected[0], 2)
+        self.assertEqual(expected[0], 3)
 
 
 if __name__ == '__main__':
