@@ -1,6 +1,4 @@
-import math
-
-
+# import math
 def firstrun():
     return "success"
 
