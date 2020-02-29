@@ -20,16 +20,20 @@ class TestCase(unittest.TestCase):
     #     expected = 314
     #     self.assertEqual(expected, task.get_area(10))
 
-    def test_get_first_and_last_ele(self):
-        test_list_1 = [1, 2, 3]
-        expected = task.get_first_and_last_ele(test_list_1)
-        self.assertEqual(expected[0], 1)
-        self.assertEqual(expected[1], 3)
+    # def test_get_first_and_last_ele(self):
+    #     test_list_1 = [1, 2, 3]
+    #     expected = task.get_first_and_last_ele(test_list_1)
+    #     self.assertEqual(expected[0], 1)
+    #     self.assertEqual(expected[1], 3)
 
-        test_list_2 = ['a', 'b', 'c', 'd']
-        expected = task.get_first_and_last_ele(test_list_2)
-        self.assertEqual(expected[0], 'a')
-        self.assertEqual(expected[1], 'd')
+    #     test_list_2 = ['a', 'b', 'c', 'd']
+    #     expected = task.get_first_and_last_ele(test_list_2)
+    #     self.assertEqual(expected[0], 'a')
+    #     self.assertEqual(expected[1], 'd')
+
+    def test_get_days_bet_dates(self):
+        expected = task.get_days_bet_dates(date)
+        self.assertEqual(expected.days, -8)
 
 
 if __name__ == '__main__':
