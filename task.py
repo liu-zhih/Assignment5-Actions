@@ -6,4 +6,4 @@ def firstrun():
 
 
 def get_area(radius):
-    return float(radius*radius*math.pi)
+    return round(radius*radius*math.pi)

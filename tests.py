@@ -15,6 +15,9 @@ class TestCase(unittest.TestCase):
     def test_get_area(self):
         expected = 0
         self.assertEqual(expected, task.get_area(0))
+        
+        expected = 64
+        self.assertEqual(expected, get_area(4.5))
 
 
 if __name__ == '__main__':
