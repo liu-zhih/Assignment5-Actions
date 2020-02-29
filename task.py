@@ -3,5 +3,5 @@ import math
 def firstrun():
     return "success"
 
-def get_area(float(radius)):
-    return radius*radius*math.pi
+def get_area(radius):
+    return float(radius*radius*math.pi)
