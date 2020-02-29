@@ -20,6 +20,12 @@ class TestCase(unittest.TestCase):
         expected = 314
         self.assertEqual(expected, task.get_area(10))
 
+    def test_get_first_and_last_ele(self):
+        test_list_1 = [1, 2, 3]
+        expected = task.get_first_and_last_ele(test_list_1)
+        self.assertEqual(expected[0], 1)
+        self.assertEqual(expected[0], 2)
+
 
 if __name__ == '__main__':
     unittest.main()
